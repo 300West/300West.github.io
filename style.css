@@ -1,51 +1,89 @@
-<!doctype html>
-<html>
-  <head>
-    <title> Corey Kelly Resume</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
+@import url("https://fonts.googleapis.com/css?family=Nunito:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
 
-  <body>
-    <div>
-      <h1>Corey Kelly</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dictum at tempor commodo ullamcorper a lacus vestibulum. Eget egestas purus viverra accumsan in nisl nisi.<p/>
-    </div> 
-    
-    <div class="exp-header">
-      <h3>Professional Experience</h3>   
-    </div>
-    
-    <div>
-      <h4>The Masy Group</h4>
-      <h5>Site Lead & Data Strategist</h5>
-      <h6>Oct 2021 - Current</h6>
-      
-      <ul>
-        <li>Task One</li>
-        <li>Task Two</li>
-        <li>Task Three</li>
-      </ul>
-    </div> 
-    
-    <div>
-      <h4>The Buffalo Group</h4>
-      <h5>Senior Analyst & Data Strategist</h5>
-      <h6>June 2020 - Oct 2021</h6>
-      
-      <ul>
-        <li>Task One</li>
-        <li>Task Two</li>
-        <li>Task Three</li>
-      </ul>
-    </div> 
-    
-    <div class="ed-header">
-      <h3>Education</h3>   
-    </div>
-    
-    <div>
-      <h5>Associate of Arts | General Studies</h5>
-      <h6>American Military University | Completed 2021</h6>
-    </div>    
-  </body>  
-</html>
+body 
+{
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container 
+{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_side 
+{
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+
+.profile_txt
+{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile_txt .imgbx 
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile_txt .imgbx img
+{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile_txt h2
+{
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;  
+}
+
+.profile_txt h2 span
+{
+  font-size: .8em;
+  font-weight: 300;
+}
+
+.contatiner .right_side 
+{
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
